@@ -2,8 +2,7 @@ package glfw
 
 import "core:os"
 
-when os.OS == "linux"   do foreign import glfw "system:glfw";
-when os.OS == "windows" do foreign import glfw "system:glfw3dll.lib";
+when os.OS == "windows" do foreign import glfw "glfw3dll.lib";
 
 /*** Structs/types ***/
 Window_Handle  :: rawptr;
